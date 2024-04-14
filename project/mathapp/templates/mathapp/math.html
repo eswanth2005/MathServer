@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Surface Area of a Right Cylinder</title>
+    <style>
+        h1 {
+            color: black;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .corner {
+            width: 600px;
+            height: 250px;
+        }
+
+        .outline {
+            display: block;
+            border: solid;
+            height: 300px;
+            width: 600px;
+            font-size: 20px;
+            background-color:orange;
+        }
+
+        .inside {
+            color: pink;
+            text-align: center;
+            margin-top: 9px;
+            margin-bottom: 6px;
+        }
+
+        
+    </style>
+</head>
+<body bgcolor="blue">
+    <center>
+        <br>
+    <div class="corner">
+        <div class="outline">
+            <h1>Surface Area of Right Cylinder</h1>
+            <h5>ESWANTH KUMAR K (212223040046)</h5>
+            <form method="POST">
+                {% csrf_token %}
+                <div class="inside">
+                    Radius : <input type="text" name="radius" value="{{r}}"></input>(in m)<br>
+                </div>
+                <div class="inside">
+                    Height : <input type="text" name="height" value="{{h}}"></input>(in m)<br>
+                </div>
+                <div class="inside">
+                    <input type="submit" value="Calculate"></input><br>
+                </div>
+                <div class="inside">
+                    Surface Area : <input type="text" name="area" value="{{area}}"></input> m <sup>2</sup><br>
+                </div>
+            </form>
+        </div>
+    </div>
+</center>
+</body>
+</html>
